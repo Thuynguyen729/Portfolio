@@ -26,7 +26,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-2xl p-5 sm:w-[350px] w-full border-green-pink-gradient"
+        className="bg-tertiary rounded-2xl p-5 sm:w-[350px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -78,4 +78,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works)
+export default SectionWrapper(Works, "work")

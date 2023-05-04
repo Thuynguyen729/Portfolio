@@ -36,19 +36,19 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[16px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled front-end developer with experience in HTML, CSS,
-        Javascript, and expertise in frameworks,libraries, and tools such as
-        React.Js, Three.js, Bootstrap, Tailwind and Github. I'm a quick learner
-        and collaborate closely with clients to create efficient, scalable, and
-        user-friendly solutions that solve real-world problems. Let's work
-        together to bring your ideas to life!
+        I'm a skilled front-end developer with core experience in HTML, CSS,
+        Javascript, and expertise in using cutting-edge technologies such as
+        ReactJs, NextJs, Three.js, Bootstrap, Tailwind and Github. I am
+        constantly looking for new opportunities to learn and grow as a
+        developer. If you're looking for a driven and enthusiastic team player
+        to help create amazing web applications, let's work together!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

@@ -24,10 +24,10 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer inline-flex ">
-            Thuy Nguyen &nbsp;
-            <span className="sm:block hidden">|&nbsp; Portfolio</span>
+            Thuy Nguyen
           </p>
         </Link>
+        {/* nav for bigger screens */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -41,6 +41,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        {/* nav for mobile */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}

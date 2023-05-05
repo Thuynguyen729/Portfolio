@@ -37,7 +37,7 @@ const ExperienceCard = ({ experience }) => (
         {experience.points.map((point, index) => (
           <li
             key={index}
-            className="text-white-100 text-[14px] pl-1 pt-1 tracking-wider"
+            className="text-white-100 text-[14px] pl-1 pt-1 tracking-wider hyphens-none"
           >
             {point}
           </li>
@@ -52,7 +52,7 @@ const Experience = () => (
     <div className="mb-20 mt-10">
       <h2 className={styles.sectionHeadText}>Work Experience.</h2>
     </div>
-    <div className="mt-20, flex, flex-col">
+    <div className="mt-20, flex, flex-col ">
       <VerticalTimeline>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} experience={experience}></ExperienceCard>

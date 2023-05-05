@@ -15,17 +15,16 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
+  threejs,
+  nextjs,
+  bootstrap,
+  shopify,
+  logo,
   fps,
   bcit,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
-  logo,
 } from "../assets"
 
 export const navLinks = [
@@ -75,32 +74,36 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
-    name: "React JS",
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "ReactJs",
     icon: reactjs,
   },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
+  {
+    name: "NextJs",
+    icon: nextjs,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
   // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
+  //   name: "NodeJs",
+  //   icon: nodejs,
   // },
   {
-    name: "Three JS",
+    name: "Shopify",
+    icon: shopify,
+  },
+  {
+    name: "Three.js",
     icon: threejs,
   },
   {
@@ -125,7 +128,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Present",
     points: [
-      "I am actively seeking new opportunities for front-end development positions and am open to exploring new challenges in my career.",
+      "I am actively seeking new front-end/web development opportunities and am open to exploring new challenges in my career.",
     ],
   },
   {

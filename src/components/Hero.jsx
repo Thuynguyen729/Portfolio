@@ -3,7 +3,7 @@ import { ComputersCanvas } from "./canvas"
 
 const Hero = () => {
   return (
-    <section className=" w-full h-[80vh] xs:h-screen mx-auto xs:mt-[88px] flex flex-col-reverse xs:flex-col ">
+    <section className=" w-full xs:h-screen mx-auto  mt-[88px] flex flex-col-reverse xs:flex-col ">
       <div
         className={`${styles.paddingX} relative inset-0 my-[40px]  flex flex-row items-start gap-5`}
       >
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative h-[250px] md:min-h-[45%] mx-[20px] md:mx-[120px] ">
+      <div className="relative h-[250px] md:min-h-[45%] mx-[20px] md:mx-[120px] my-10 xs:my-0 ">
         <ComputersCanvas />
       </div>
     </section>

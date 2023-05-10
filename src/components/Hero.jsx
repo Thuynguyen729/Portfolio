@@ -3,9 +3,9 @@ import { ComputersCanvas } from "./canvas"
 
 const Hero = () => {
   return (
-    <section className=" w-full h-screen mx-auto -mt-[50px] xs:mt-[88px] flex flex-col-reverse xs:flex-col ">
+    <section className=" max-w-7xl h-[calc(100vh-88px)] mx-auto mt-[50px] xs:mt-[88px] flex flex-col-reverse xs:flex-col ">
       <div
-        className={`${styles.paddingX} relative inset-0 my-[40px]  flex flex-row items-start gap-5`}
+        className={`${styles.paddingX}  relative inset-0 my-[40px]  flex flex-row items-start gap-5 `}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-4 h-4 rounded-full bg-[#915eff]" />

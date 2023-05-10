@@ -3,19 +3,6 @@ import Marquee from "react-fast-marquee"
 import { SectionWrapper } from "../hoc"
 import { technologies } from "../constants"
 import { styles } from "../styles"
-// import { BallCanvas } from "./canvas"
-
-// const Tech = () => {
-//   return (
-//     <div className="flex  flex-wrap justify-center gap-20">
-//       {technologies.map((technology) => (
-//         <div className="w-24 h-24 " key={technology.name}>
-//           <BallCanvas icon={technology.icon} />
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
 
 const Marquees = ({
   className = "",
@@ -59,7 +46,7 @@ const Tech = () => {
               src={tech.icon}
               alt={tech.name}
             />
-            <span className="absolute -top-4 w-max scale-0 rounded bg-gray-700/30 px-2 py-1 text-sm font-medium text-gray-800 shadow transition-all group-hover:scale-100 dark:text-gray-300">
+            <span className="absolute -top-4 w-max scale-0 rounded bg-gray-700/30 px-2 py-1 text-sm font-medium  shadow transition-all group-hover:scale-100 text-gray-300">
               {tech.name}
             </span>
           </div>

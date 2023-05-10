@@ -14,43 +14,38 @@ const ProjectCard = ({
   image,
   // course_code_link,
   index,
+  tiltMaxAngleX = 3,
+  tiltMaxAngleY = 1,
 }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-      className=" green-pink-gradient p-[1px] rounded-2xl shadow-card"
+    <Tilt
+      tiltMaxAngleX={tiltMaxAngleX}
+      tiltMaxAngleY={tiltMaxAngleY}
+      className=" green-pink-gradient p-[1px] rounded-lg shadow-card"
     >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-2xl p-5 sm:w-[350px] w-full"
-      >
-        <div className="relative w-full h-[230px]">
+      <div className=" bg-tertiary rounded-lg  w-full flex flex-col-reverse items-center gap-3 justify-between md:py-5 md:pl-5  md:flex-row  md:h-[280px] ">
+        <div className=" h-[40%] md:w-2/5 md:h-full flex flex-col flex-wrap  justify-between p-5 md:p-0 md:pr-10 ">
+          <div>
+            <h3 className="text-white font-bold text-[24px] ">{name}</h3>
+            <p className="text-gray-200 text-[14px] mt-5">{description}</p>
+          </div>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {tags.map((tag) => (
+              <p key={tag.name} className={` ${tag.color} text-[12px]`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className=" w-full h-[270px] md:w-3/5 md:h-[320px] md:absolute md:right-0 ">
           <img
             src={image}
             alt={name}
-            className="w-full object-cover rounded-2xl"
+            className="inline-block object-cover rounded-t-lg md:rounded-lg w-full h-full"
           />
         </div>
-        <div>
-          <h3 className="text-white font-bold text-[24px] mt-5">{name}</h3>
-          <p className="text-secondary text-[14px] font-semibold mt-5">
-            {description}
-          </p>
-        </div>
-
-        <div className="flex flex-wrap gap-2 mt-4">
-          {tags.map((tag) => (
-            <p key={tag.name} className={` ${tag.color} text-[14px]`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
+      </div>
+    </Tilt>
   )
 }
 
@@ -63,13 +58,13 @@ const Works = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary, text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         Following projects showcases my skills and experience through real-world
         examples of my work. It reflects my ability to solve problems, work with
         different technologies, and manage projects effectively.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-col gap-20">
         {projects.map((project, index) => (
           <ProjectCard key={project.name} index={index} {...project} />
         ))}

@@ -27,9 +27,10 @@ import shopify from "./tech/shopify.png"
 import fps from "./company/fps.png"
 import bcit from "./company/bcit.png"
 
-import carrent from "./carrent.png"
-import jobit from "./jobit.png"
-import tripguide from "./tripguide.png"
+import modest from "./modest.jpg"
+import portfolio from "./portfolio.jpg"
+import smartwatch from "./smartwatch.jpg"
+import realtor from "./realtor.jpg"
 
 export {
   logo,
@@ -57,8 +58,9 @@ export {
   threejs,
   fps,
   bcit,
-  carrent,
-  jobit,
-  tripguide,
+  realtor,
+  smartwatch,
+  portfolio,
+  modest,
   shopify,
 }

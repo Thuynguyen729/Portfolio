@@ -12,7 +12,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  // course_code_link,
+  link,
   index,
   tiltMaxAngleX = 3,
   tiltMaxAngleY = 1,
@@ -38,11 +38,13 @@ const ProjectCard = ({
           </div>
         </div>
         <div className=" w-full h-[270px] md:w-3/5 md:h-[320px] md:absolute md:right-0 ">
-          <img
-            src={image}
-            alt={name}
-            className="inline-block object-cover rounded-t-lg md:rounded-lg w-full h-full"
-          />
+          <a href={link} target="_blank">
+            <img
+              src={image}
+              alt={name}
+              className="inline-block object-cover rounded-t-lg md:rounded-lg w-full h-full hover:cursor-pointer"
+            />
+          </a>
         </div>
       </div>
     </Tilt>

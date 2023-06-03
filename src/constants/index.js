@@ -157,10 +157,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Apr 2021 - July 2022",
     points: [
-      "Co-develop art directions with the communications manager on different marketing programs, campaigns, and initiatives that required digital design produced internally and externally.",
-      "Redesign a responsive graphic user interface for a web-based remote monitoring application.",
-      "Design multilingual landing pages, email newsletters, and social media posts through Hubspot.",
-      "Liaise with corporate staff, agencies, commercial printers, and/or sign fabricators to produce and coordinate various projects.",
+      "Co-developed art directions with the communications manager on different marketing programs, campaigns, and initiatives that required digital design produced internally and externally.",
+      "Redesigned a responsive graphic user interface for a web-based remote monitoring application.",
+      "Designed multilingual landing pages, email newsletters, and social media posts through Hubspot.",
+      "Liaised with corporate staff, agencies, commercial printers, and/or sign fabricators to produce and coordinate various projects.",
     ],
   },
   {

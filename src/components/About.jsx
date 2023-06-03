@@ -48,10 +48,10 @@ const About = () => {
         in using cutting-edge technologies such as{" "}
         <span className="text-white">
           ReactJs, NextJs, Three.js, Bootstrap, Tailwind and Github
-        </span>{" "}
-        .I am looking for new opportunities to learn and grow as a developer. If
-        you're looking for a driven and enthusiastic team player to help create
-        amazing web applications, let's work together!
+        </span>
+        . I am looking for new opportunities to learn and grow as a developer.
+        If you're looking for a driven and enthusiastic team player to help
+        create amazing web applications, let's work together!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 ">
         {services.map((service, index) => (

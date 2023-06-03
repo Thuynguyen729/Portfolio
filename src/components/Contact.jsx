@@ -24,21 +24,21 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    emailjs
-      .send(
-        "service_2gcvt0g",
-        "template_jhui1bv",
-        {
-          from_name: form.name,
-          to_name: "Thuy Nguyen",
-          from_email: form.email,
-          to_email: "thuytn.design@gmail.com",
-          message: form.message,
-        },
-        "jmp5n29fDiJu5i8xx"
-      )
-      .then(
-        () => {
+    if (form.message && form.email) {
+      emailjs
+        .send(
+          "service_2gcvt0g",
+          "template_jhui1bv",
+          {
+            from_name: form.name,
+            to_name: "Thuy Nguyen",
+            from_email: form.email,
+            to_email: "thuytn.design@gmail.com",
+            message: form.message,
+          },
+          "jmp5n29fDiJu5i8xx"
+        )
+        .then(() => {
           setLoading(false)
           alert("Thank you for contacting. I will get back to you soon")
 
@@ -47,13 +47,17 @@ const Contact = () => {
             email: "",
             message: "",
           })
-        },
-        (err) => {
-          setLoading(false)
-          console.log(err)
-          alert("Something went wrong")
-        }
-      )
+        })
+    } else if (!form.message) {
+      setLoading(false)
+      alert("Message can not be empty")
+    } else if (!form.email) {
+      setLoading(false)
+      alert("Please enter your email address")
+    } else {
+      setLoading(false)
+      alert("Something went wrong")
+    }
   }
 
   return (

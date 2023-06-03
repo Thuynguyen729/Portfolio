@@ -43,12 +43,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[16px] max-w-3xl leading-[30px] 	"
       >
-        I'm a skilled front-end developer with core experience in HTML, CSS,
-        Javascript, and expertise in using cutting-edge technologies such as
-        ReactJs, NextJs, Three.js, Bootstrap, Tailwind and Github. I am
-        constantly looking for new opportunities to learn and grow as a
-        developer. If you're looking for a driven and enthusiastic team player
-        to help create amazing web applications, let's work together!
+        I'm a skilled front-end developer with core experience in{" "}
+        <span className="text-white">HTML, CSS, Javascript</span>, and expertise
+        in using cutting-edge technologies such as{" "}
+        <span className="text-white">
+          ReactJs, NextJs, Three.js, Bootstrap, Tailwind and Github
+        </span>{" "}
+        .I am looking for new opportunities to learn and grow as a developer. If
+        you're looking for a driven and enthusiastic team player to help create
+        amazing web applications, let's work together!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 ">
         {services.map((service, index) => (
